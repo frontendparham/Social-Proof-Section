@@ -20,7 +20,7 @@ A Responsive Social Proof Section
 
 ### Links
 
-- Live Site URL: [GitHub Pages](https://frontendparham.github.io/social-proof-section/)
+- Live Site URL: [GitHub Pages](https://frontendparham.github.io/Social-Proof-Section/)
 
 ## My process
 

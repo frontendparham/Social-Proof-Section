@@ -1,0 +1,48 @@
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+Our Breakpoints:
+phone: 600px
+tablet portrait: 900px
+tablet lanscape: 1200px
+our design: 1200px - 1800px
+big desktops: 1800px +
+
+our variable:
+phone
+tab-por
+tab-land
+big-desktop
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-por {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == my-desktop {
+    @media (max-width: 90em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

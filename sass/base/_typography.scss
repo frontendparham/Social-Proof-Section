@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+}
+
+.heading__primary {
+  font-size: 5rem;
+  width: 75%;
+  color: $very-dark-magenta;
+  margin-bottom: 1rem;
+
+  @include respond(phone) {
+    width: 100%;
+    font-size: 4rem;
+  }
+}
+
+.heading__sub {
+  font-size: $default-font-size;
+  width: 85%;
+  color: rgba($dark-grayish-magenta, 0.7);
+  margin-bottom: 3rem;
+  font-weight: 700;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}

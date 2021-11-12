@@ -31,7 +31,8 @@ big-desktop
     }
   }
   @if $breakpoint == my-desktop {
-    @media (max-width: 90em) {
+    @media (max-width: 81.25em) {
+      //90em
       @content;
     }
   }
